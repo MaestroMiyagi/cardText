@@ -1,6 +1,4 @@
-import {
-    textCards
-} from './api.js'
+import api from "./api.js"
 import {
     myCards
 } from './cards.js'
@@ -19,7 +17,7 @@ import {
 }*/
 
 const printCards = async () => {
-    let cards = await textCards()
+    let cards = await api.textCards()
     console.log(cards)
     cards.forEach(item => {
         let {
